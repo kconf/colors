@@ -1,0 +1,45 @@
+* {
+    /* --- 全局与背景 --- */
+    /* 基础背景色，使用 Surface 颜色 */
+    background:                  {{colors.surface.default.hex}};
+    background-color:            {{colors.surface.default.hex}};
+    /* 基础前景色（文字颜色），使用 On Surface */
+    foreground:                  {{colors.on_surface.default.hex}};
+    /* 边框颜色，使用主强调色 Primary，让整个窗口更突出 */
+    border-color:                {{colors.primary.default.hex}};
+    /* 分隔线颜色，使用更柔和的 Outline Variant */
+    separatorcolor:              {{colors.outline_variant.default.hex}};
+    /* 滚动条滑块颜色，使用主强调色，表示可交互 */
+    scrollbar-handle:            {{colors.primary.default.hex}};
+
+    /* --- 普通行 (Normal) --- */
+    /* 默认行的背景，与主背景一致 */
+    normal-background:           {{colors.surface.default.hex}};
+    normal-foreground:           {{colors.on_surface.default.hex}};
+    /* 交替行的背景，使用 Surface Container，创造微妙的层次感 */
+    alternate-normal-background: {{colors.surface_container.default.hex}};
+    alternate-normal-foreground: {{colors.on_surface_variant.default.hex}};
+    /* 选中行的背景，使用主强调色 Primary，提供清晰、强烈的视觉反馈 */
+    selected-normal-background:  {{colors.primary.default.hex}};
+    selected-normal-foreground:  {{colors.on_primary.default.hex}};
+
+    /* --- 活动行 (Active) --- */
+    /* “活动”状态的背景（例如 dmenu 模式下的高亮），使用次要容器色 */
+    active-background:           {{colors.secondary_container.default.hex}};
+    active-foreground:           {{colors.on_secondary_container.default.hex}};
+    alternate-active-background: {{colors.secondary_container.default.hex}};
+    alternate-active-foreground: {{colors.on_secondary_container.default.hex}};
+    /* 选中的“活动”行，使用更强的次要强调色 */
+    selected-active-background:  {{colors.secondary.default.hex}};
+    selected-active-foreground:  {{colors.on_secondary.default.hex}};
+
+    /* --- 紧急行 (Urgent) --- */
+    /* “紧急”状态的背景，使用错误容器色 */
+    urgent-background:           {{colors.error_container.default.hex}};
+    urgent-foreground:           {{colors.on_error_container.default.hex}};
+    alternate-urgent-background: {{colors.error_container.default.hex}};
+    alternate-urgent-foreground: {{colors.on_error_container.default.hex}};
+    /* 选中的“紧急”行，使用更强的错误色 */
+    selected-urgent-background:  {{colors.error.default.hex}};
+    selected-urgent-foreground:  {{colors.on_error.default.hex}};
+}
