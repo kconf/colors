@@ -10,7 +10,7 @@
     normal-foreground:           {{foreground}};
     alternate-normal-background: {{background | lighten(0.1)}};
     alternate-normal-foreground: {{foreground}};
-    selected-normal-background:  {{color7}};
+    selected-normal-background:  {{color2}};
     selected-normal-foreground:  {{color15}};
 
     active-background:           {{color3}};
