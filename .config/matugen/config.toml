@@ -15,7 +15,7 @@ output_path = '~/.config/polybar/colors.ini'
 input_path = './templates/i3-colors.conf'
 output_path = '~/.config/i3/colors.conf'
 
-# [templates.waybar]
-# input_path = './templates/colors.css'
-# output_path = '~/.config/waybar/colors.css'
-# post_hook = 'pkill -SIGUSR2 waybar'
+[templates.waybar]
+input_path = './templates/waybar-colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'

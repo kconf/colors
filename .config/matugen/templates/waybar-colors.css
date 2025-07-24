@@ -1,0 +1,48 @@
+/* 主背景色: 使用 surface_container，提供一个有“浮起感”的底色 */
+@define-color bar-bg {{colors.surface_container.default.hex}};
+
+/* 所有模块的默认背景色: 使用比主背景更高一级的容器色，创造深度 */
+@define-color item-bg {{colors.surface_container_high.default.hex}};
+
+/* 工作区 (Workspaces) */
+@define-color ws-bg @item-bg;
+/* 未激活工作区的文字颜色，使用 on_surface_variant，更柔和 */
+@define-color ws-fg {{colors.on_surface_variant.default.hex}};
+/* 活动工作区的背景色，使用主强调色 */
+@define-color ws-active {{colors.primary.default.hex}};
+/* 紧急工作区的背景色，使用错误色 */
+@define-color ws-urgent {{colors.error.default.hex}};
+
+/* 模式 (Mode) */
+@define-color mode-bg @item-bg;
+/* 模式文字颜色，使用次要强调色 */
+@define-color mode-fg {{colors.secondary.default.hex}};
+
+/* 布局 (Layout) */
+@define-color layout-bg @item-bg;
+/* 布局文字颜色，使用三次强调色 */
+@define-color layout-fg {{colors.tertiary.default.hex}};
+@define-color layout-focused @layout-fg;
+
+/* 窗口标题 (Window Title) */
+@define-color window-bg @item-bg;
+/* 窗口标题文字颜色，使用标准的 on_surface 文字颜色 */
+@define-color window-fg {{colors.on_surface.default.hex}};
+
+/* 通用控件背景 (Widgets) */
+@define-color widget-bg @item-bg;
+
+/* 悬浮提示 (Tooltip) */
+@define-color tooltip-bg {{colors.surface_container_highest.default.hex}};
+@define-color tooltip-border {{colors.outline.default.hex}};
+
+/* 时钟 (Clock) */
+@define-color clock-fg {{colors.on_primary_container.default.hex}};
+
+/* 音量 (Pulseaudio) */
+@define-color pulseaudio-fg {{colors.on_secondary_container.default.hex}};
+@define-color pulseaudio-muted {{colors.error.default.hex}};
+
+/* 网络 (Network) */
+@define-color network-wifi {{colors.on_tertiary_container.default.hex}};
+@define-color network-disconnected {{colors.error.default.hex}};

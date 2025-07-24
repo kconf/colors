@@ -1,0 +1,42 @@
+/* 主背景色 */
+@define-color bar-bg {{background}};
+
+/* 所有模块的默认背景色，使用亮黑色/深灰色，提供层次感 */
+@define-color item-bg {{background | lighten(0.1)}};
+
+/* 工作区 (Workspaces) */
+@define-color ws-bg @item-bg;
+@define-color ws-fg {{foreground}};
+@define-color ws-active {{color4}}; /* 蓝色，用于高亮当前活动的工作区 */
+@define-color ws-urgent {{color1}}; /* 红色，用于提示紧急状态 */
+
+/* 模式 (Mode) */
+@define-color mode-bg @item-bg;
+@define-color mode-fg {{color3}}; /* 黄色，用于提示特殊模式 (如 i3 的 resize 模式) */
+
+/* 布局 (Layout) */
+@define-color layout-bg @item-bg;
+@define-color layout-fg {{color2}}; /* 绿色 */
+@define-color layout-focused {{color5}}; /* 紫色，用于高亮 */
+
+/* 窗口标题 (Window Title) */
+@define-color window-bg @item-bg;
+@define-color window-fg {{foreground}};
+
+/* 通用控件背景 (Widgets) */
+@define-color widget-bg @item-bg;
+
+/* 悬浮提示 (Tooltip) */
+@define-color tooltip-bg @item-bg;
+@define-color tooltip-border @color4; /* 蓝色边框 */
+
+/* 时钟 (Clock) */
+@define-color clock-fg {{color6}}; /* 青色 */
+
+/* 音量 (Pulseaudio) */
+@define-color pulseaudio-fg {{color5}}; /* 紫色 */
+@define-color pulseaudio-muted {{color1}}; /* 红色，表示静音 */
+
+/* 网络 (Network) */
+@define-color network-wifi {{color12}}; /* 亮蓝色 */
+@define-color network-disconnected {{color1}}; /* 红色，表示断开连接 */
