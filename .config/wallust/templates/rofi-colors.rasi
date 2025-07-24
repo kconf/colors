@@ -10,7 +10,7 @@
     normal-foreground:           {{foreground}};
     alternate-normal-background: {{background | lighten(0.1)}};
     alternate-normal-foreground: {{foreground}};
-    selected-normal-background:  {{color2}};
+    selected-normal-background:  {{color4}};
     selected-normal-foreground:  {{color15}};
 
     active-background:           {{color3}};
@@ -20,7 +20,7 @@
     selected-active-background:  {{color11}};
     selected-active-foreground:  {{background}};
 
-    urgent-background:           {{color1}};
+    urgent-background:           {{color5}};
     urgent-foreground:           {{background}};
     alternate-urgent-background: {{color1 | darken(0.1)}};
     alternate-urgent-foreground: {{background}};

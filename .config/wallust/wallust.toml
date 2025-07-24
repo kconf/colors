@@ -45,5 +45,5 @@ palette = "dark"
 # ¡ If either one is a directory, then both SHOULD be one. !
 # zathura = { template = 'zathura', target = '~/.config/zathura/zathurarc' }
 
-rofi.template = 'rofi-colors.rasi'
-rofi.target = '~/.config/rofi/colors.rasi'
+rofi = { template = 'rofi-colors.rasi', target = '~/.config/rofi/colors.rasi' }
+polybar = { template = 'polybar-colors.ini', target = '~/.config/polybar/colors.ini' }
