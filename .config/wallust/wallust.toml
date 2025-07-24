@@ -43,7 +43,7 @@ palette = "dark"
 # template: A RELATIVE path that points to `~/.config/wallust/template` (depends on platform)
 # target: ABSOLUTE path in which to place a file with generated templated values.
 # ¡ If either one is a directory, then both SHOULD be one. !
-# zathura = { template = 'zathura', target = '~/.config/zathura/zathurarc' }
 
 rofi = { template = 'rofi-colors.rasi', target = '~/.config/rofi/colors.rasi' }
 polybar = { template = 'polybar-colors.ini', target = '~/.config/polybar/colors.ini' }
+i3 = { template = 'i3-colors.conf', target = '~/.config/i3/colors.conf' }
